@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>	11</java.version>
 	</properties>
 
 	<dependencies>
@@ -58,6 +58,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>0.3.4</version>
+				<configuration>
+					<appName>corona-virus-tracker-daily</appName>
+					<jdkVersion>11</jdkVersion>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
